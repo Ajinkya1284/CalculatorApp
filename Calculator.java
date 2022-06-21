@@ -22,11 +22,15 @@ public class Calculator
         return n1-n2;
     }     
 
+    public static int  percentage(int n1,int n2)
+    {
+        return n1*n2/100;
+    }
     public static void main(String args[])
     {
         int ch=0,result=0;
         Scanner sc1=new Scanner(System.in);
-        while(ch!=5)
+        while(ch!=6)
         {
             System.out.println("Enter 2 numbers:");
             int n1=sc1.nextInt();
@@ -35,7 +39,8 @@ public class Calculator
             System.out.println("2)SUBSTRACTION");
             System.out.println("3)MULTIPLICATION");
             System.out.println("4)DIVISION");
-            System.out.println("5)EXIT");
+            System.out.println("5)PERCENTAGE");
+            System.out.println("6)EXIT");
             System.out.println("--------------------------");
             System.out.println("Enter your choice");
             ch=sc1.nextInt();
@@ -52,13 +57,11 @@ public class Calculator
 
                 case 4:result=div(n1, n2);
                     break;
+                case 5:result=percentage(n1, n2);
 
             }
-
             System.out.println("RESULT:"+result);
         }
-
         sc1.close();
-
     }
 }
