@@ -61,6 +61,7 @@ public class Calculator
 
             }
             System.out.println("RESULT:"+result);
+            break;
         }
         sc1.close();
     }
