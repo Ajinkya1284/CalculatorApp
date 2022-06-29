@@ -43,7 +43,7 @@ public class Calculator
             System.out.println("6)EXIT");
             System.out.println("--------------------------");
             System.out.println("Enter your choice");
-            ch=sc1.nextInt();
+            ch=Integer.parseInt(args[2]);
             switch(ch)
             {
                 case 1:result=add(n1, n2);
