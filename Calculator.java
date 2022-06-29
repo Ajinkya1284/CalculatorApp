@@ -33,8 +33,8 @@ public class Calculator
         while(ch!=6)
         {
             System.out.println("Enter 2 numbers:");
-            int n1=sc1.nextInt();
-            int n2=sc1.nextInt();
+            int n1=Integer.parseInt(args[0])
+            int n2=Integer.parseInt(args[1]);
             System.out.println("1)ADDITION");
             System.out.println("2)SUBSTRACTION");
             System.out.println("3)MULTIPLICATION");
